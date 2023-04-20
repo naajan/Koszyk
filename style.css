@@ -1,0 +1,268 @@
+body {
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    background-color: #f4f4f4;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+a {
+    color: initial;
+    text-decoration: initial;
+}
+.header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2)!important;
+}
+.selected {
+    font-weight: 700;
+}
+.logo {
+    font-size: 23px;
+    font-weight: 700;
+}
+.top-menu {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5;  
+}
+.header a {
+    padding: 8px;
+    transition: color 0.08s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.header a:hover {
+    color: rgba(0,0,0,0.7)
+}
+.checkout {
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0px 20px 0px;
+    margin: 0;
+}
+.container {
+    display: flex;
+    max-width: 1500px;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
+.panel {
+    background-color: white;
+    border-radius: 4px;
+    padding: 30px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2)!important;
+    margin: 10px;
+}
+.shopping-cart {
+    flex-grow: 1;
+}
+.title {
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.7);
+    font-weight: 800;
+    letter-spacing: -0.1px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.shopping-cart>* {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 9px 0px;
+    display: flex;
+}
+.shopping-cart>*:last-of-type {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.shopping-cart .title {
+    padding-bottom: 25px;
+}
+.preview {
+    height: 48px;
+    width: 64px;
+    min-width: 16px;
+    background-color: limegreen;
+    border-radius: 4px;
+    margin: auto 12px auto 0px;
+}
+.name, .price, .subtotal, .total {
+    margin: auto 0px;
+    color: rgba(0,0,0,0.7);
+    font-weight: 700;
+}
+.name {
+    font-weight: 600;
+    flex-grow: 1;
+}
+.remove {
+    padding: 8px 0px;
+    color: rgba(0,0,0,0.4);
+    text-align: end;
+    padding-right: 32px;
+    display: inline-block;
+    padding: 16px;
+    user-select: none;
+    cursor: pointer;
+}
+.remove:hover {
+    color: rgba(0,0,0,0.2);
+}
+.price {
+    text-align: end;
+}
+.subtotal {
+    text-align: end;
+    display: block;
+    flex-grow: 1;
+}
+.total {
+    display: block;
+    font-size: 24px;
+    color: black;
+    text-align: end;
+    flex-grow: 1;
+    padding-bottom: 0;
+}
+.summary {
+    display: inline-flex;
+    flex-direction: column;
+    min-width: 400px;
+}
+#email {
+    padding: 0.625em;
+    border: 1px solid rgba(0,0,0,0.25);
+    color: inherit;
+    border-radius: 3px;
+    flex-grow: 1;
+    padding: 0.75em 0.875em;
+    font-family: inherit;
+    font-size: 1em;
+    display: flex;
+}
+#email:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #007aff;
+}
+#email::placeholder {
+    color: rgba(0,0,0,0.4);
+}
+label {
+    display: block;
+    color: rgba(0,0,0,0.85);
+    margin: 12px 0px;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+}
+.payment {
+    display: flex;
+    flex-direction: column;
+}
+.payment-option {
+    border: 1px solid rgba(0,0,0,0.25);
+    margin-top: 16px;
+    margin-bottom: 0px;
+    padding: 10px 12px;
+    display: flex;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    display: flex;
+    align-items: center;
+}
+input, #email, .payment-option {
+    transition: all 0.1s ease-in-out;
+}
+input:hover, #email:hover, .payment-option:hover {
+    border-color: rgba(0,0,0,0.7);
+}
+.payment-option:has(.circle:checked){
+    background: #eeeeee;
+    border-color: rgba(0,0,0,0.25);
+}
+.circle{
+    height: 22px;
+    width: 22px;
+    background: #ccc;
+    border: 5px solid transparent;
+    display: inline-block;
+    margin: 0;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.payment-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+.buy {
+    margin-top: 24px;
+    background-color: #007aff;
+    font-family: "Nunito Sans";
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 3px;
+    padding: 18px 18px;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
+}
+.amount {
+    font-family: "Nunito Sans";
+    border: 1px solid rgba(0,0,0,0.25);
+    width: 32px;
+    height: 26px;
+    margin: auto 12px;
+    padding: 0px 8px;
+    display: flex;
+    border-radius: 3px;
+}
+.amount:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #007aff;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  opacity: 1;
+}
+.footer {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2)
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+    .header {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0;
+    }
+    .summary {
+        min-width: auto;
+    }
+    .logo {
+        padding-bottom: 0 !important;
+    }
+    .top-menu {
+        justify-content: center;
+    }
+}

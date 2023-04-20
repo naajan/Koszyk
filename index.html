@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>Sklep</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="" class="logo">Sklep</a>
+      <div class="top-menu">
+        <a href="">O nas</a>
+        <a href="">Kontakt</a>
+        <a href="" class="selected">Koszyk</a>
+        <a href="">Wyloguj</a>
+      </div>
+    </div>
+    <div class="main">
+      <h1 class="checkout">Twój koszyk</h1>
+      <div class="container">
+        <div class="shopping-cart panel">
+          <div class="title">Produkty</div>
+          <div class="cart-item">
+            <div class="preview" style="background-color: forestgreen;"></div>
+            <div class="name">Zielony T-Shirt XL</div>
+            <input class="amount" type="number" value="1" min="1">
+            <div class="remove">✖</div>
+            <div class="price">49.99zł</div>
+          </div>
+          <div class="cart-item">
+            <div class="preview" style="background-color: brown;"></div>
+            <div class="name">Czerwone Buty 42</div>
+            <input class="amount" type="number" value="1" min="1">
+            <div class="remove">✖</div>
+            <div class="price">99.99zł</div>
+          </div>
+          <div class="cart-item">
+            <div class="preview" style="background-color: navy;"></div>
+            <div class="name">Niebieska Kurtka M</div>
+            <input class="amount" type="number" value="1" min="1">
+            <div class="remove">✖</div>
+            <div class="price">129.99zł</div>
+          </div>
+          <div class="cart-item">
+            <div class="preview" style="background-color: rebeccapurple;"></div>
+            <div class="name">Fioletowa Czapka Zimowa</div>
+            <input class="amount" type="number" value="1" min="1">
+            <div class="remove">✖</div>
+            <div class="price">29.99zł</div>
+          </div>
+          <div class="total"></div>
+
+        </div>
+        <form class="summary" action="" method="post">
+          <div class="information panel">
+            <div class="title">Twoje dane</div>
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="imie.nazwisko@gmail.com" required> 
+          </div>
+          <div class="payment panel">
+            <div class="title">Opcje Płatności</div>
+            <label for="paypal" class="payment-option">
+              <input type="radio" name="rd" class="circle" id="paypal" required>
+              <img src="paypal.png" alt="" class="payment-icon">
+              <div class="payment-name">PayPal</div>
+            </label>
+            <label for="mastercard" class="payment-option">
+              <input type="radio" name="rd" class="circle" id="mastercard" required>
+              <img src="mastercard.png" alt="" class="payment-icon">
+              <div class="payment-name">MasterCard</div>
+            </label>
+            <label for="visa" class="payment-option">
+              <input type="radio" name="rd" class="circle" id="visa" required>
+              <img src="visa.png" alt="" class="payment-icon">
+              <div class="payment-name">Visa</div>
+            </label>
+            <input type="submit" value="Kup teraz" class="buy">
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      © 2023 Copyright - Sklep 
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
